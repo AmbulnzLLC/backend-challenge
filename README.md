@@ -61,7 +61,7 @@ Evaluation
 
 Our goal is to find answers to those questions:
 
-* Do you understand the Ruby on Rails framework, and MVC pattern in general?
+* Do you understand the framework, and MVC pattern in general?
 * Can you design interfaces that are clear and easy to use?
 * Do you master your working environment?
 
