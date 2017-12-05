@@ -8,9 +8,15 @@ Prerequisites
 -------------
 
 * [Git](http://git-scm.com/)
-* [nodejs](https://nodejs.org/en/)
-* [LoopBack](http://loopback.io/)
 * [MySQL](https://www.mysql.com/)
+
+Option one
+* [nodejs](https://nodejs.org/en/)
+* [nodejs framework of your choice](i.e. https://loopback.io)
+
+Option two
+* [Ruby](https://www.ruby-lang.org)
+* [Ruby rameworks of your choice](i.e. http://www.ruby-grape.org)
 
 Installation
 ------------
@@ -21,9 +27,9 @@ Clone the project
 git clone git@github.com:AmbulnzLLC/backend-challenge.git && cd backend-challenge/
 ```
 
-Generate a nojdes app. You can add libraries of your choice, but be ready to describe them.
+Generate a nojdes or ruby project. You can add libraries of your choice, but be ready to describe them.
 
-**Please set up up your working environment before the interview (working nodesjs, MySQL)
+**Please set up up your working environment before the interview (working nodesjs or Ruby, MySQL)
 so we don't spend time installing anything.**
 
 Project description
@@ -61,7 +67,7 @@ Evaluation
 
 Our goal is to find answers to those questions:
 
-* Do you understand the framework, and MVC pattern in general?
+* Do you understand the chosen stack, framework, and MVC pattern in general?
 * Can you design interfaces that are clear and easy to use?
 * Do you master your working environment?
 
