@@ -7,16 +7,16 @@ It's allowed to use documentation and online resources.
 Prerequisites
 -------------
 
-* [Git](http://git-scm.com/)
+* [Git](https://git-scm.com/)
 * [MySQL](https://www.mysql.com/)
 
 Option one
-* [nodejs](https://nodejs.org/en/)
-* [nodejs framework of your choice](i.e. https://loopback.io)
+* [Node.js](https://nodejs.org/)
+* Node.js framework of your choice (i.e. [Loopback](https://loopback.io/))
 
 Option two
-* [Ruby](https://www.ruby-lang.org)
-* [Ruby rameworks of your choice](i.e. http://www.ruby-grape.org)
+* [Ruby](https://www.ruby-lang.org/)
+* Ruby framework of your choice (i.e. [Ruby on Rails](https://rubyonrails.org/))
 
 Installation
 ------------
@@ -27,9 +27,9 @@ Clone the project
 git clone git@github.com:AmbulnzLLC/backend-challenge.git && cd backend-challenge/
 ```
 
-Generate a nojdes or ruby project. You can add libraries of your choice, but be ready to describe them.
+Generate a Node.js or Ruby project. You can add libraries of your choice, but be ready to describe them.
 
-**Please set up up your working environment before the interview (working nodesjs or Ruby, MySQL)
+**Please set up up your working environment before the interview (working Node.js or Ruby, MySQL)
 so we don't spend time installing anything.**
 
 Project description
