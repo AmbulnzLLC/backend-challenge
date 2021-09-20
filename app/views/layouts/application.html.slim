@@ -1,0 +1,19 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport"
+    title Pizza
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    script src="https://unpkg.com/stimulus/dist/stimulus.umd.js"
+
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  body
+    .container.pt-4
+      = yield
+      = link_to 'Log out', destroy_user_session_path, method: :delete, class: 'btn btn-danger',
+                                                      data: { confirm: 'Are you sure?' }
