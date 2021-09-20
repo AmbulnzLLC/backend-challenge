@@ -1,0 +1,14 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport"
+    title Pizza
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_tag 'application', 'data-turbolinks-track': 'reload'
+
+  body
+    .container.devise-container.pt-4 = yield

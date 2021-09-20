@@ -1,0 +1,71 @@
+# Additional translations at https://github.com/heartcombo/devise/wiki/I18n
+
+en:
+  devise:
+    confirmations:
+      confirmed: "Your email address has been successfully confirmed."
+      send_instructions: "You will receive an email with instructions for how to confirm your email address in a few minutes."
+      send_paranoid_instructions: "If your email address exists in our database, you will receive an email with instructions for how to confirm your email address in a few minutes."
+    failure:
+      already_authenticated: "You are already signed in."
+      inactive: "Your account is not activated yet."
+      invalid: "Invalid %{authentication_keys} or password."
+      locked: "Your account is locked."
+      last_attempt: "You have one more attempt before your account is locked."
+      not_found_in_database: "Invalid %{authentication_keys} or password."
+      timeout: "Your session expired. Please sign in again to continue."
+      unauthenticated: "You need to sign in or sign up before continuing."
+      unconfirmed_title: "Activation link expired."
+      unconfirmed: "Please, activate your account to sign in. Check your email to find the activation link."
+      unrecovered_title: "Recovery link has expired."
+    mailer:
+      confirmation_instructions:
+        subject: "Sign up on Pizza."
+      reset_password_instructions:
+        subject: "Password recovery."
+      unlock_instructions:
+        subject: "Unlock instructions"
+      email_changed:
+        subject: "Email Changed"
+      password_change:
+        subject: "Password Changed"
+    omniauth_callbacks:
+      failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
+      success: "Successfully authenticated from %{kind} account."
+    passwords:
+      no_token: "You can't access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided."
+      send_instructions: "A confirmation email will be sent to the email address provided. Follow the instructions to reset your password."
+      send_instructions_title: "Recovery link successfully sent."
+      send_paranoid_instructions: "If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes."
+      updated: "Your password has been changed successfully. You are now signed in."
+      updated_not_active_title: "Password successfully changed."
+      updated_not_active: "Your password has been successfully changed."
+    registrations:
+      destroyed: "Bye! Your account has been successfully cancelled. We hope to see you again soon."
+      signed_up: "Welcome! You have signed up successfully."
+      signed_up_but_inactive: "An activation link has been sent to %{email}. Follow this link to activate your account."
+      signed_up_but_locked: "You have signed up successfully. However, we could not sign you in because your account is locked."
+      signed_up_but_unconfirmed: "Please, activate your account to sign in. Check your email to find the activation link."
+      signed_up_but_inactive_title: "Thank you for signing up"
+      update_needs_confirmation: "You updated your account successfully, but we need to verify your new email address. Please check your email and follow the confirmation link to confirm your new email address."
+      updated: "Your account has been updated successfully."
+      updated_but_not_signed_in: "Your account has been updated successfully, but since your password was changed, you need to sign in again"
+    sessions:
+      signed_in: "Signed in successfully."
+      signed_out: "Signed out successfully."
+      already_signed_out: "Signed out successfully."
+    unlocks:
+      send_instructions: "You will receive an email with instructions for how to unlock your account in a few minutes."
+      send_paranoid_instructions: "If your account exists, you will receive an email with instructions for how to unlock it in a few minutes."
+      unlocked: "Your account has been unlocked successfully. Please sign in to continue."
+  errors:
+    messages:
+      already_confirmed: "This email address was already confirmed, please try signing in."
+      confirmation_period_expired: "Activation link has expired. You can request a new activation link."
+      recovery_period_expired: "Recovery link has expired. You can request a new recovery link."
+      expired: "Link has expired, please request a new one."
+      not_found: "Not found."
+      not_locked: "Was not locked."
+      not_saved:
+        one: "1 error prohibited this %{resource} from being saved:"
+        other: "%{count} errors prohibited this %{resource} from being saved:"

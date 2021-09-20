@@ -1,0 +1,19 @@
+= simple_form_for @order, url: order_path, data: { controller: 'orders' } do |f|
+  table.table.mt-4
+    thead
+      th colspan="3" Pizza
+      th Quantity
+    tbody
+      = f.simple_fields_for :order_items do |ff|
+        tr
+          td colspan="3"
+            = ff.input :pizza_type_id, collection: @pizza_types, label: false,
+                                       input_html: { 'data-action' => 'blur->orders#calculate' }
+          td
+            = ff.input :quantity, label: false, input_html: { 'data-action' => 'blur->orders#calculate' }
+    tfoot
+      tr
+        td
+        th.text-right Total
+        td.total_cost.text-left = number_to_currency(@order.total_cost)
+        td.text-right = f.submit 'Place order', class: 'btn btn-primary'

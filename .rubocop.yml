@@ -1,0 +1,66 @@
+require:
+  - rubocop-rails
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'Gemfile'
+    - 'node_modules/**/*'
+    - 'test/**/*'
+    - 'spec/**/*'
+    - 'vendor/**/*'
+  TargetRubyVersion: 3.0
+
+Style/Documentation:
+  Enabled: false
+
+# Layout/DotPosition:
+#   EnforcedStyle: trailing
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 140
+
+Layout/FirstHashElementIndentation:
+  EnforcedStyle: consistent
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 30
+
+Metrics/MethodLength:
+  Max: 25
+
+Metrics/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'spec/**/*.rb'
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
+
+Lint/UselessMethodDefinition:
+  Enabled: false
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: aligned
+Naming/PredicateName:
+  Enabled: true
+  AllowedMethods:
+    - has_one
+    - has_many
+
+Rails/SkipsModelValidations:
+  Enabled: false
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
+Rails/InverseOf:
+  Enabled: false
+Rails/OutputSafety:
+  Enabled: false

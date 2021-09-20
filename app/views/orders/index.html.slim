@@ -1,0 +1,22 @@
+.row.align-items-center
+  .col
+    h1 Pizza Orders
+  .col.text-right
+    = link_to 'Create Order', new_order_path, class: 'btn btn-primary'
+
+table.table.mt-4
+  thead
+    tr
+      th Order Num
+      th User email
+      th Order cost
+      th Discount
+      th Total cost
+  tbody
+    - @orders.each do |order|
+      tr
+        td = order.id
+        td = order.user.email
+        td = number_to_currency order.cost
+        td = number_to_percentage order.discount * 100, precision: 1
+        td = number_to_currency order.total_cost
