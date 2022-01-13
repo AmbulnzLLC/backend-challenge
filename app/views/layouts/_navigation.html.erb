@@ -1,0 +1,13 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <%= link_to 'Home', root_path, class: 'navbar-brand' %>
+      <% if user_signed_in? %>
+        <%= link_to 'Orders', orders_path %>
+        <%= link_to 'Pizza Types', pizza_types_path if current_user.admin? %>
+        <%= link_to 'Edit account', edit_user_registration_path %>
+        <%= link_to 'Sign out', destroy_user_session_path, :method=>'delete' %>
+      <% end %>
+    </div>
+  </div>
+</nav>

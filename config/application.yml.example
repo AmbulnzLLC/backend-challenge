@@ -1,0 +1,7 @@
+database_user: user
+database_pass: password
+database_host: localhost
+
+admin_email: 'admin@admin.com'
+admin_pass: 'password'
+
