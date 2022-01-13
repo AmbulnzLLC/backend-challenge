@@ -1,0 +1,2 @@
+module PizzaTypesHelper
+end

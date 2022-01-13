@@ -1,0 +1,27 @@
+<%= form_with(model: pizza_type) do |form| %>
+  <% if pizza_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pizza_type.errors.count, "error") %> prohibited this pizza_type from being saved:</h2>
+
+      <ul>
+        <% pizza_type.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
