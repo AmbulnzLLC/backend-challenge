@@ -1,4 +1,4 @@
-<%= form_with(model: order) do |form| %>
+<%= form_for order do |form| %>
   <% if order.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(order.errors.count, "error") %> prohibited this order from being saved:</h2>
@@ -11,9 +11,14 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :user %>
-    <%= form.text_field :user %>
+  <div id="order-items">
+    <div class="title">Items</div>
+    <%= form.fields_for :order_items do |order_item| %>
+      <%= render 'order_item_fields', f: order_item, pizza_types: pizza_types %>
+    <% end %>
+    <div class="links">
+      <%= link_to_add_association 'add order item', form, :order_items %>
+    </div>
   </div>
 
   <div class="actions">

@@ -1,9 +1,34 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>User:</strong>
-  <%= @order.user %>
-</p>
+<h3>Order Items</h3>
+
+
+<table class="table">
+  <thead>
+  <tr>
+    <th>pizza type name</th>
+    <th>quantity</th>
+    <th>price</th>
+  </tr>
+  </thead>
+  <% @order.order_items.each do |order_item| %>
+    <tr>
+      <td>
+        <%= order_item.pizza_type.name %>
+      </td>
+      <td>
+        <%= order_item.quantity %>
+      </td>
+      <td>
+        <%= order_item.quantity * order_item.pizza_type.price %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+
+<div class="sum">
+  Total Sum: <%= @order.total_sum %>
+</div>
 
 <%= link_to 'Edit', edit_order_path(@order) %> |
 <%= link_to 'Back', orders_path %>

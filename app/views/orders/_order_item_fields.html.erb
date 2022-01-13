@@ -1,0 +1,12 @@
+<div class="nested-fields">
+  <div class="field">
+    <%= f.label :pizza_type_id %>
+    <%= f.select :pizza_type_id, options_for_select(@pizza_types.map{ |t| [t.name, t.id] }) %>
+
+  </div>
+  <div class="field">
+    <%= f.label :quantity %>
+    <%= f.text_field :quantity, type: "number", min: 1 %>
+  </div>
+  <%= link_to_remove_association "remove order item", f %>
+</div>
