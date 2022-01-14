@@ -1,0 +1,9 @@
+AllCops:
+  Exclude:
+    - './db/migrate/*'
+    - './db/*'
+    - './bin/*'
+    - './config/*'
+    - './config/initializers/**/*'
+    - './app/javascript/**/*'
+  SuggestExtensions: false

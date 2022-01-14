@@ -1,0 +1,30 @@
+.main-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-line {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin: 10px;
+}
+
+.order-body {
+  margin: 10px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

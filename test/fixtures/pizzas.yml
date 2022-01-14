@@ -1,0 +1,34 @@
+sicilian:
+  id: 1
+  name: 'Sicilian'
+  price: 10.0
+
+capricciosa:
+  id: 2
+  name: 'Capricciosa'
+  price: 12.0
+
+quattro:
+  id: 3
+  name: 'Quattro Formaggi'
+  price: 14.5
+
+napoletana:
+  id: 4
+  name: 'Napoletana'
+  price: 16.0
+
+caprese:
+  id: 5
+  name: 'Caprese'
+  price: 18.5
+
+calzone:
+  id: 6
+  name: 'Calzone'
+  price: 20.0
+
+margherita:
+  id: 7
+  name: 'Margherita'
+  price: 25.0
