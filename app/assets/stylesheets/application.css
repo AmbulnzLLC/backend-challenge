@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+
+
+.main-wrapper { 
+  display: flex;
+  justify-content: center;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-header {
+  height: 50px;
+  width: 100px;
+}
+
+.order {
+  margin-bottom: 10px;
+}
+
+.order-item {
+  display: flex;
+}
+
+.pizza-name {
+  min-width: 200px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+}

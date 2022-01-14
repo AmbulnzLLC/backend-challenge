@@ -1,0 +1,5 @@
+order1: { id: 1, total: 20.0}
+order2: { id: 2, total: 69.3}
+order3: { id: 3, total: 69.3}
+order4: { id: 4, total: 37.0}
+order5: { id: 5, total: 109.65}
