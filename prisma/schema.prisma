@@ -13,11 +13,18 @@ datasource db {
 // pizza to be added to order 
 model Pizza {
   id       Int      @id @default(autoincrement())
-  type     String   @db.VarChar(255)
   Orders  Orderitem[]
+  flavor   Flavor @default(CHEESE)
   //TODO: we will add functionality for customers to create accounts later
   // customer    User     @relation(fields: [authorId], references: [id])
   // customerId  Int
+}
+
+enum Flavor {
+  CHEESE
+  PEPPERONI
+  VEGGIE
+  MEAT
 }
 
 // keeps track of the order and when it was made/updated
