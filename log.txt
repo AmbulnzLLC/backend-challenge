@@ -5,3 +5,13 @@ Hours worked: 12PM-3:30pm
 Outlined API functionality
 Created Project File and started incorporating dependencies
 Researched Technologies to be incorporated
+
+On 07/10/22
+Hours worked: 12PM-7:30pm
+Created DB models
+Migrated
+Edited and re mirgrated db models
+Reading Documentation 
+Created Express applixation 
+Added server and error handling
+created routes and completed logic for both get routes
