@@ -1,0 +1,7 @@
+Start Date of Project: 07/01/22
+
+On 07/01/22
+Hours worked: 12PM-3:30pm
+Outlined API functionality
+Created Project File and started incorporating dependencies
+Researched Technologies to be incorporated

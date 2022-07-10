@@ -1,0 +1,19 @@
+{
+  "name": "backend-challenge-pizza-place",
+  "version": "1.0.0",
+  "description": "Challenge for Backend Developer\r ===============================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiriiMadeMagic/backend-challenge-pizza-place.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiriiMadeMagic/backend-challenge-pizza-place/issues"
+  },
+  "homepage": "https://github.com/MiriiMadeMagic/backend-challenge-pizza-place#readme"
+}
