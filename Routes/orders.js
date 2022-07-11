@@ -1,7 +1,7 @@
 const express = require("express");
 const router = new express.Router();
 const ExpressError = require("../expressError");
-import { PrismaClient } from '@prisma/client'
+import { Flavor, PrismaClient } from '@prisma/client'
 const date = require('date-and-time');
 
 const now = new Date();
@@ -26,7 +26,7 @@ router.get("/", function(req, res, next) {
 router.get("/:orderId", function(req, res, next) {
     const { orderId } = req.params;
 
-    const result = await prisma.user.findUnique({
+    const result = await prisma.order.findUnique({
         where: {
           id: orderId,
         },
@@ -45,19 +45,30 @@ router.get("/:orderId", function(req, res, next) {
 });
 
 router.post("/newOrder", function(req, res, next) {
-    const {flavors, qty} = req.body;
+    const {order} = req.body;
 
-
+  
    
     
-    const newOrder = await prisma.orderItems.create({
-        data: {
-           
-
-        },
-    
+    const newOrder = await prisma.order.create({
+        data: [
+            {
+            createdAt: date.format(now, 'YYYY/MM/DD HH:mm:ss'),
+            pizza: { connect:
+                    { 
+                    flavor: order.flavor, 
+                    quantity: order.quantity
+                    }
+                },
+            } 
+        ]
     })
-  
+
+    if(!result){
+        let error = new ExpressError('unproccessable entity', 422)
+        return next(error)
+    };
+
     return res.json(newOrder)
 });
 

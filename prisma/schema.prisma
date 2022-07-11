@@ -13,8 +13,9 @@ datasource db {
 // pizza to be added to order 
 model Pizza {
   id       Int      @id @default(autoincrement())
-  Orders  Orderitem[]
   flavor   Flavor @default(CHEESE)
+  quantity Int
+  orders Order[]
   //TODO: we will add functionality for customers to create accounts later
   // customer    User     @relation(fields: [authorId], references: [id])
   // customerId  Int
@@ -32,30 +33,12 @@ model Order {
   id     Int     @id @default(autoincrement())
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  items  Orderitem[]
-} 
-
-//TODO: How do we keep track of the quantity?
-// explicitly connects order to the amount of pizzas contained in the them 
- model Orderitem {
-
   pizza  Pizza   @relation(fields: [pizzaId], references: [id])
   pizzaId Int 
-  order Order  @relation(fields: [orderId], references: [id])
-  orderId Int     @unique
-  quantity Int
-
-  @@id([pizzaId, orderId])
 }
 
-        
 
-
-
-
-
-
-
+      
 
 //TODO: User Model to be added later
 // model User {
