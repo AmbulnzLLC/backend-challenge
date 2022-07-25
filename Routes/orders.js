@@ -46,10 +46,7 @@ router.get("/:orderId", function(req, res, next) {
 
 router.post("/newOrder", function(req, res, next) {
     const {order} = req.body;
-
-  
-   
-    
+ 
     const newOrder = await prisma.order.create({
         data: [
             {
