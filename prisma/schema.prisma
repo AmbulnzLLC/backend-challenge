@@ -32,7 +32,7 @@ enum Flavor {
 model Order {
   id     Int     @id @default(autoincrement())
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime @updatedAt 
   pizza  Pizza   @relation(fields: [pizzaId], references: [id])
   pizzaId Int 
 }
