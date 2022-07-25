@@ -1,0 +1,50 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// pizza to be added to order 
+model Pizza {
+  id       Int      @id @default(autoincrement())
+  flavor   Flavor @default(CHEESE)
+  quantity Int
+  orders Order[]
+  //TODO: we will add functionality for customers to create accounts later
+  // customer    User     @relation(fields: [authorId], references: [id])
+  // customerId  Int
+}
+
+enum Flavor {
+  CHEESE
+  PEPPERONI
+  VEGGIE
+  MEAT
+}
+
+// keeps track of the order and when it was made/updated
+model Order {
+  id     Int     @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt 
+  pizza  Pizza   @relation(fields: [pizzaId], references: [id])
+  pizzaId Int 
+}
+
+
+      
+
+//TODO: User Model to be added later
+// model User {
+//   id      Int      @id @default(autoincrement())
+//   email   String   @unique
+//   name    String?
+//   posts   Post[]
+//   profile Profile?
+// }

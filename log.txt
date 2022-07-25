@@ -1,0 +1,30 @@
+Start Date of Project: 07/01/22
+
+On 07/01/22
+Hours worked: 12PM-3:30pm
+Outlined API functionality
+Created Project File and started incorporating dependencies
+Researched Technologies to be incorporated
+
+On 07/10/22
+Hours worked: 12PM-7:30pm
+Created DB models
+Migrated
+Edited and re mirgrated db models
+Reading Documentation 
+Created Express applixation 
+Added server and error handling
+created routes and completed logic for both get routes
+
+On 07/10/22
+Hours worked: 7PM-10:30pm
+updated DB models
+Migrated
+refactored routes
+added testing
+found issue in unti test with Mock Resolve
+
+07/25/22 1pm-2pm
+proofreading
+documenting coding
+correcting missing fields
