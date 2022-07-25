@@ -23,3 +23,8 @@ Migrated
 refactored routes
 added testing
 found issue in unti test with Mock Resolve
+
+07/25/22 1pm-2pm
+proofreading
+documenting coding
+correcting missing fields

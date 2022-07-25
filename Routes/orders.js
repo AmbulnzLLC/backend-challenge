@@ -11,6 +11,7 @@ const prisma = new PrismaClient()
 // gets all orders and returns a paginated array of order objects to be used by the DOM
 router.get("/", function(req, res, next) {
     const results = await prisma.order.findMany({
+        //skip and take are used for the pagination of results
         skip: 3,
         take: 2,
       })
@@ -51,6 +52,7 @@ router.post("/newOrder", function(req, res, next) {
         data: [
             {
             createdAt: date.format(now, 'YYYY/MM/DD HH:mm:ss'),
+            updatedAt: date.format(now, 'YYYY/MM/DD HH:mm:ss'),
             pizza: { connect:
                     { 
                     flavor: order.flavor, 
