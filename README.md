@@ -35,32 +35,30 @@ so we don't spend time installing anything.**
 Project description
 -------------------
 
-**Pizzeria**
+I'm passionate about productivity. I want to manage my tasks and projects more effectively. I need a simple tool that helps me control my task flow.
 
-The application serves the purpose of ordering pizza online.
+**Functional Requirements**
+* I want to be able to create/update/delete projects
+* I want to be able to add tasks to my project
+* I want to be able to update/delete tasks
+* I want to be able to prioritise tasks within a project
+* I want to be able to set a deadline for my task
+* I want to be able to mark a task as 'done'
+* I want to be able to add comments to my tasks
+* I want to be able to delete comments
+* I want to be able to attach files to comments
 
-The following entities should be created (including proper relations):
+Optional Functional Requirments:
+* I want to be able to sign in/sign up by email/password or OAuth;
 
-* *pizza type* - has a name and price (e.g. Margherita $5, Pepperoni $6, ...)
-* *order* - has items
-* *order item* - has a pizza type and quantity
+**Technical Requirements**
+* RESTful JSON API to handle requests based on the functional requirements
+* All entities created with proper relations
+* Server side validation
+* It should be well tested using TDD/BDD
 
-On the homepage, list of orders with total prices should be shown.
-
-On a "Create Order" screen, the user can select pizza types and amounts, add to the order, see current total, and place (save) the order.
-
-Additionally, the following JSON API should be provided:
-
-* list of orders
-* details of an individual order
-
-Optional features:
-
-* meaningful model validations (e.g. item amount > 0)
-* order bonuses (e.g. 5% cheaper when total over $50, 10% cheaper when total over ...)
-* authentication
-* tests
-* whatever interesting you'd like to do
+Optional Technical Requirments:
+* It should have a user authentication solution. The user should only have access to his/her own projects and tasks
 
 Evaluation
 ----------
@@ -75,7 +73,6 @@ Due to the limited time consider the following:
 
 * It is not important to have a fully functional application at the end
 * The goals might shift during the interview as we discuss the work flow
-* The front-end does not have to be beautiful
 
 Levels of functionality:
 
